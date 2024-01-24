@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin | eRuang</title>
+  <link rel="icon" href="../assets/user/img/logo3.png">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/admin/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../assets/admin/css/adminlte.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="../assets/user/img/logo4min.png" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">eRuang</span>
+    </a>
+    
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="user-panel mt-4 pb-3 mb-3 d-flex text-light">
+            <div class="image">
+              <i class="fas fa-user-alt mx-2"></i><span class="brand-text">Administrator</span>
+            </div>
+          </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+          with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Room
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="ruang_kampusA.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Kampus A</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="ruang_kampusB.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Kampus B</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="peminjaman.html" class="nav-link">
+              <i class="nav-icon fa-solid fa-book-bookmark"></i> 
+              <p>
+                Pinjam
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="jadwal.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                Jadwal
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html" >
+              <i class=" nav-icon fas fa-sign-out-alt"></i> 
+              <p>Logout</p>
+            </a>
+          </li>
+
+              
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Kelola Ruangan</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="ruang_kampusA.html">Kampus A</a></li>
+                <li class="breadcrumb-item active">Kelola Ruangan</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+<!-- Main content -->
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- left column -->
+      <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Tambah Ruangan</h3>
+          </div>
+          <!-- /.card-header -->
+          <!-- form start -->
+          <form id="register-form">
+            <div class="card-body">
+              <div class="form-group">
+                <label for="namaRuangan">Nama Ruangan :</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="namaRuangan" placeholder="Enter Name ...">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="kategori">Kategori :</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-hand-pointer"></i></span>
+                  </div>
+                  <select class="form-control" id="kategori">
+                    <option>Aula</option>
+                    <option>Ruang Rapat</option>
+                    <option>Ruang Seminar</option>
+                    <option>Lab Komputer</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="deskripsiRuangan">Deskripsi Ruangan :</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-book"></i></span>
+                  </div>
+                  <textarea class="form-control" id="deskripsiRuangan" rows="3" placeholder="Enter Description..."></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="form-label fw-medium">Fasilitas Ruangan :</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Sound System">
+                  <label class="form-check-label" for="inlineCheckbox1">Sound System</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="WiFi">
+                  <label class="form-check-label" for="inlineCheckbox2">WiFi</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Layar Besar">
+                  <label class="form-check-label" for="inlineCheckbox3">Layar Besar</label>
+                </div>
+              </div>
+            </div>
+            <!-- /.card-body -->
+
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+        <!-- /.card -->
+      </div>
+      <!--/.col (right) -->
+    </div>
+    <!-- /.row -->
+  </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 0.0.1
+    </div>
+    <strong>Copyright &copy; 2024 <a href="#">eRuang</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../assets/admin/js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../assets/admin/js/bootstrap.bundle.min.js"></script>
+<!-- bs-custom-file-input -->
+<script src="../assets/admin/js/bs-custom-file-input.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../assets/admin/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../assets/admin/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+$(function () {
+  bsCustomFileInput.init();
+});
+</script>
+
+<script>
+  document.getElementById('register-form').onsubmit = function(event) {
+    event.preventDefault();
+
+    let namaRuangan = document.getElementById('namaRuangan').value.trim();
+    let kategori = document.getElementById('kategori').value.trim();
+    let deskripsiRuangan = document.getElementById('deskripsiRuangan').value.trim();
+
+    // Check form validation
+    if (namaRuangan === "" || kategori === "" || deskripsiRuangan === "") {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'All fields are required',
+        customClass: {
+          confirmButton: 'btn btn-primary'
+        },
+        buttonsStyling: false
+      });
+    } else {
+      // Perform form submission logic here
+      // For now, display a success message
+      Swal.fire({
+        icon: 'success',
+        title: 'Add Room Success!',
+        text: 'Anda berhasil menambah ruangan',
+        customClass: {
+      confirmButton: 'btn btn-primary'
+    },
+    buttonsStyling: false
+  });
+    }
+  }
+</script>
+</body>
+</html>
